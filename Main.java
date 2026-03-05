@@ -4,15 +4,15 @@ class Main {
         System.out.println("Try programiz.pro");
         
         String name = "kArak";
-        String result = name.toLowerCase();
-        char [] pali = result.toCharArray();
-        String final1 = "";
+        String lowerFormate = name.toLowerCase();
+        char [] storeChar = lowerFormate.toCharArray();
+        String reverse = "";
         boolean found = false;
-        for (int i=pali.length-1; i>=0; i--)
+        for (int i=storeChar.length-1; i>=0; i--)
         {
-            final1 +=pali[i];
+            reverse +=storeChar[i];
              
-             if (final1.equals(result))
+             if (reverse.equals(lowerFormate))
              {
                  found= true;
              }
